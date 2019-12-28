@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'portfolio.apps.PortfolioConfig',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,8 +77,11 @@ WSGI_APPLICATION = 'mwdev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'personal_site',
+        'USER': 'personal_site_user',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
     }
 }
 
