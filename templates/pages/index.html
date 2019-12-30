@@ -52,7 +52,7 @@
         <div class="col-md-6 col-lg-6 text-center mb-5">
           <div class="site-service-item site-animate" data-animate-effect="fadeIn">
             <span class="icon">
-              <span class="icon-phone3"></span>
+              <span class="icon-desktop"></span>
             </span>
             <h3 class="mb-6">Front End Development</h3>
             <ul class="skill-list">
@@ -67,7 +67,7 @@
         <div class="col-md-6 col-lg-6 text-center mb-5">
           <div class="site-service-item site-animate" data-animate-effect="fadeIn">
             <span class="icon">
-              <span class="icon-wallet2"></span>
+              <span class="icon-cogs"></span>
             </span>
             <h3 class="mb-6">Back End Development</h3>
             <ul class="skill-list">
@@ -83,7 +83,7 @@
         <div class="col-md-6 col-lg-6 text-center mb-5">
           <div class="site-service-item site-animate" data-animate-effect="fadeIn">
             <span class="icon">
-              <span class="icon-lightbulb"></span>
+              <span class="icon-wrench"></span>
             </span>
             <h3 class="mb-6">Tools and Technologies</h3>
             <ul class="skill-list">
@@ -101,7 +101,7 @@
         <div class="col-md-6 col-lg-6 text-center mb-5">
           <div class="site-service-item site-animate" data-animate-effect="fadeIn">
             <span class="icon">
-              <span class="icon-phone3"></span>
+              <span class="icon-book"></span>
             </span>
             <h3 class="mb-6">Other Skills</h3>
             <ul class="skill-list">
@@ -138,26 +138,15 @@
                 {% if projects %}
                 {% for project in projects %}
                     <div class="single-portfolio col-sm-6 all {{ project.stack }}">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                            </div>
-                            <a href="images/p1.jpg" class="img-pop-up">  
-                                <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-                                </div>
-                            </a>                                  
-                        </div>
                         <div class="p-inner">
-                            <h4>{{ project.name }}</h4>
+                            <h3 class="bold">{{ project.name }}</h3>
                             <p>{{ project.description }}</p>
-                            <div class="project-links col-md-12 text-center ">
+                            <div class="project-links">
                                 <a href="{{ project.github_link }}" class="social-item" target="_blank">Code <span class="icon-code"></span></a>
                                 {% if project.is_live %}
                                     <a href="{{ project.live_link }}" class="social-item" target="_blank">Demo <span class="icon-laptop"></span></a>
                                 {% endif %}
                             </div>
-                            <div class="cat">Full Stack</div>
                         </div>                                         
                     </div>
                 {% endfor %}

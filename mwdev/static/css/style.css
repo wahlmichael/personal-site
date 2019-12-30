@@ -337,7 +337,11 @@ a {
       .filters ul li.active {
         color: #57d131; }
 
-.single-portfolio {
+.p-inner {
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 15px;
+  margin: 0 25px;
   margin-bottom: 50px;
   display: block; }
   .single-portfolio .relative {
@@ -350,6 +354,11 @@ a {
       font-size: 12px;
       text-transform: uppercase;
       color: #cccccc; }
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
 
 /*--------- Start Portfolio Area -------------*/
 .portfolio-area .primary-btn {
@@ -481,62 +490,6 @@ a {
       -webkit-transition: none;
       -o-transition: none;
       transition: none; } }
-
-.resume-item {
-  padding: 40px;
-  background: #fff;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  border: 4px solid transparent; }
-  .resume-item:hover, .resume-item:focus {
-    border: 4px solid #57d131;
-    -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); }
-  .resume-item .date {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 12px;
-    letter-spacing: .1em;
-    color: #b3bdc6;
-    text-transform: uppercase; }
-  .resume-item .school {
-    display: block;
-    font-size: 20px; }
-  .resume-item h3, .resume-item .school {
-    color: #2c3e50; }
-
-.blog-entry {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  position: relative;
-  top: 0;
-  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1); }
-  .blog-entry:hover, .blog-entry:active, .blog-entry:focus {
-    -webkit-box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.1);
-    top: -2px; }
-  .blog-entry .blog-entry-text {
-    border-top: none;
-    padding: 30px; }
-    .blog-entry .blog-entry-text h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      line-height: 1.5; }
-      .blog-entry .blog-entry-text h3 a {
-        color: #2c3e50; }
-        .blog-entry .blog-entry-text h3 a:hover {
-          color: #57d131; }
-  .blog-entry .meta {
-    font-size: 14px; }
-    .blog-entry .meta a {
-      display: inline-block;
-      margin-right: 10px;
-      color: #96a3b0; }
-      .blog-entry .meta a:hover {
-        color: #57d131; }
 
 .form-control {
   border: none !important;
