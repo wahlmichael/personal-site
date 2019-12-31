@@ -25,6 +25,12 @@ SECRET_KEY = '%u9zt2-+v6_5#hq#%bpz#sbe^#g@-ze06(1oe%ev7mfp*u6ze1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'michaelwahldev'
+EMAIL_HOST_PASSWORD = 'somethingsecret'
+EMAIL_USE_TLS = True
+
 ALLOWED_HOSTS = []
 
 
@@ -122,7 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 
-STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mwdev/static')
