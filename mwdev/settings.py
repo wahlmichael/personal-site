@@ -136,5 +136,5 @@ STATICFILES_DIRS = [
 
 try:
     from .local_settings import *
-except: ImportError:
+except ImportError:
     pass
