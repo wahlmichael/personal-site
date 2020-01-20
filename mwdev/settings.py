@@ -26,7 +26,7 @@ SECRET_KEY = '!kvqcgxtn76kwtcd*8kkhzg*2c!%+!mgo8kg-%fbdf-e4@ake1'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['http://138.197.196.86/', 'michaelwahl.dev', 'www.michaelwahl.dev']
+ALLOWED_HOSTS = ['http://138.197.196.86/', 'michaelwahl.dev', 'www.michaelwahl.dev', 'localhost']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
